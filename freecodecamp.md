@@ -5,8 +5,7 @@
   ```
   
   
-2.Declare JavaScript Variables
-
-```Declare myName below this line
+```Declare JavaScript Variables
+//Declare myName below this line
 var myName;
 ```
