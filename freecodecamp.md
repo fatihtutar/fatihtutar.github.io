@@ -4,8 +4,8 @@ Comment Your JavaScript Code
 /*this is multiline comment
   no I did not copy paste from the left of the page:) */
   ```
-  
-```Declare JavaScript Variables
+Declare JavaScript Variables
+```JavaScript
 //Declare myName below this line
 var myName;
 ```
