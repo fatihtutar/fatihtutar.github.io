@@ -1,5 +1,5 @@
-```Comment Your JavaScript Code
-// this is one line comment
+Comment Your JavaScript Code
+```// this is one line comment
 /*this is multiline comment
   no I did not copy paste from the left of the page:) */
   ```
