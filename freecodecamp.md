@@ -296,7 +296,164 @@ var myStr = "This is the start. " + "This is the end." ;
 
 Note:We can also use the += operator to concatenate a string onto the end of an existing string variable. This can be very helpful to break a long string over several lines.
   
-  -
+  -Build myStr over several lines by concatenating these two strings: "This is the first sentence. " and "This is the second sentence." using the += operator. Use the += operator similar to how it is shown in the editor. Start by assigning the first string to myStr, then add on the second string.
+```JavaScript
+// Example
+var ourStr = "I come first. ";
+ourStr += "I come second.";
+// Only change code below this line
+var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+```
+
+27.Constructing Strings with Variables
+
+  -Set myName to a string equal to your name and build myStr with myName between the strings "My name is " and " and I am well!"
+```JavaScript
+// Example
+var ourName = "freeCodeCamp";
+var ourStr = "Hello, our name is " + ourName + ", how are you?";
+// Only change code below this line
+var myName = "Fatih";
+var myStr = "My name is " + myName  + " and I am well!"; 
+```
+
+28. Appending Variables to Strings
+
+  -Set someAdjective and append it to myStr using the += operator.
+```JavaScript
+// Example
+var anAdjective = "awesome!";
+var ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+// Only change code below this line
+var someAdjective = "cool!";
+var myStr = "Learning to code is ";
+myStr += someAdjective;
+```
+
+29.Find the Length of a String
+
+Note:You can find the length of a String value by writing .length after the string variable or string literal.Example:
+   "Alan Peter".length; // 10
+   
+   -Use the .length property to count the number of characters in the lastName variable and assign it to lastNameLength.// Example
+var firstNameLength = 0;
+var firstName = "Ada";
+
+firstNameLength = firstName.length;
+
+// Setup
+var lastNameLength = 0;
+var lastName = "Lovelace";
+
+// Only change code below this line.
+
+lastNameLength = lastName.length;
+```JavaScript
+// Example
+var firstNameLength = 0;
+var firstName = "Ada";
+firstNameLength = firstName.length;
+// Setup
+var lastNameLength = 0;
+var lastName = "Lovelace";
+// Only change code below this line.
+lastNameLength = lastName.length;
+```
+
+30.Use Bracket Notation to Find the First Character in a String
+
+Note:Bracket notation is a way to get a character at a specific index within a string. Most modern programming languages, like JavaScript, don't start counting at 1 like humans do. They start at 0. This is referred to as Zero-based indexing. 
+For example;
+The character at index 0 in the word "Charles" is "C". So if var firstName = "Charles", you can get the value of the first letter of the string by using firstName[0]
+
+  -Use bracket notation to find the first character in the lastName variable and assign it to firstLetterOfLastName.
+```JavaScript
+// Example
+var firstLetterOfFirstName = "";
+var firstName = "Ada";
+firstLetterOfFirstName = firstName[0];
+// Setup
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+// Only change code below this line
+firstLetterOfLastName = lastName[0];
+```
+
+31.
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
 ```JavaScript
 
 ```
