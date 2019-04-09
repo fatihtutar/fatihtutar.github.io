@@ -941,39 +941,214 @@ function testStrict(val) {
 testStrict(7);
 ```
 
-58.
-```JavaScript
+58.Practice comparing different values
 
+Note 1:Examples:
+    3 == '3' // returns true because JavaScript performs type conversion from string to number
+    3 === '3' // returns false because the types are different and type conversion is not performed
+Note 2:In JavaScript, you can determine the type of a variable or a value with the typeof operator, as follows:
+    typeof 3 // returns 'number'
+    typeof '3' // returns 'string'
+
+  -The compareEquality function in the editor compares two values using the equality operator. Modify the function so that it returns "Equal" only when the values are strictly equal.
+```JavaScript
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+compareEquality(10, "10");
 ```
 
-```JavaScript
+59. Comparison with the Inequality Operator
 
+Note:Examples:
+    1 != 2 // true
+    1 != "1" // false
+    1 != '1' // false
+    1 != true // false
+    0 != false // false
+
+  -Add the inequality operator != in the if statement so that the function will return "Not Equal" when val is not equivalent to 99
+```JavaScript
+// Setup
+function testNotEqual(val) {
+  if (val!=99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+// Change this value to test
+testNotEqual(10);
 ```
 
-```JavaScript
+60.Comparison with the Strict Inequality Operator
 
+Note:The strict inequality operator (!==) is the logical opposite of the strict equality operator. Example:
+    3 !== 3 // false
+    3 !== '3' // true
+    4 !== 3 // true
+
+  -Add the strict inequality operator to the if statement so the function will return "Not Equal" when val is not strictly equal to 17
+```JavaScript
+// Setup
+function testStrictNotEqual(val) {
+  // Only Change Code Below this Line
+  
+  if (val !== 17) {
+
+  // Only Change Code Above this Line
+
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+// Change this value to test
+testStrictNotEqual(10);
 ```
 
-```JavaScript
+61.Comparison with the Greater Than Operator
 
+Examples:
+    5 > 3 // true
+    7 > '3' // true
+    2 > 3 // false
+    '1' > 9 // false
+
+  -Add the greater than operator to the indicated lines so that the return statements make sense.
+```JavaScript
+function testGreaterThan(val) {
+  if (val > 100 ) {  // Change this line
+    return "Over 100";
+  }
+  
+  if (val > 10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+// Change this value to test
+testGreaterThan(11);
 ```
 
-```JavaScript
+62.Comparison with the Greater Than Or Equal To Operator
 
+  -Add the greater than or equal to operator to the indicated lines so that the return statements make sense.
+```JavaScript
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  // Change this line
+    return "20 or Over";
+  }
+  
+  if (val >= 10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+// Change this value to test
+testGreaterOrEqual(21);
 ```
 
-```JavaScript
+63.Comparison with the Less Than Operator
 
+  -Add the less than operator to the indicated lines so that the return statements make sense.
+```JavaScript
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
+  }
+  
+  if (val < 55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+// Change this value to test
+testLessThan(24);
 ```
 
-```JavaScript
+64.Comparison with the Less Than Or Equal To Operator
 
+  -Add the less than or equal to operator to the indicated lines so that the return statements make sense.
+```JavaScript
+function testLessOrEqual(val) {
+  if (val <= 12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+  
+  if (val <= 24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+// Change this value to test
+testLessOrEqual(11);
 ```
 
-```JavaScript
+65.Comparisons with the Logical And Operator
 
+Example:
+if (num > 5) {
+  if (num < 10) {
+    return "Yes";
+  }
+}
+return "No";
+
+//Can be written as:
+
+if (num > 5 && num < 10) {
+  return "Yes";
+}
+return "No";
+
+  -Combine the two if statements into one statement which will return "Yes" if val is less than or equal to 50 and greater than or equal to 25. Otherwise, will return "No".
+```JavaScript
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val <= 50 && val >= 25) {
+        return "Yes";
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+// Change this value to test
+testLogicalAnd(51);
 ```
 
-```JavaScript
+66.Comparisons with the Logical Or Operator
 
+  -Combine the two if statements into one statement which returns "Outside" if val is not between 10 and 20, inclusive. Otherwise, return "Inside".
+```JavaScript
+function testLogicalOr(val) {
+  // Only change code below this line
+  if (val <10 || val >20) {
+    return "Outside";
+  }
+
+  // Only change code above this line
+  return "Inside";
+}
+
+// Change this value to test
+testLogicalOr(21);
 ```
+
+67.
