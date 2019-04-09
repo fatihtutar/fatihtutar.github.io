@@ -659,6 +659,211 @@ function reusableFunction(){
 reusableFunction();
 ```
 
+47.Passing Values to Functions with Arguments
+
+Note: Parameters are variables that act as placeholders for the values that are to be input to a function when it is called. When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "passed") into a function when it is called are known as arguments.
+    Example:
+    function testFun(param1, param2) {
+      console.log(param1, param2);
+    }
+    testFun("Hello", "World");
+    //Result is Hello, World
+    
+   -Create a function called functionWithArgs that accepts two arguments and outputs their sum to the dev console.
+   -Call the function with two numbers as arguments.
+```JavaScript
+// Example
+function ourFunctionWithArgs(a, b) {
+  console.log(a - b);
+}
+ourFunctionWithArgs(10, 5); // Outputs 5
+// Only change code below this line.
+function functionWithArgs(c, d) {
+  console.log(c + d);
+}
+functionWithArgs(1, 2);
+```
+
+48.Global Scope and Functions
+
+Note: In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
+
+Variables which are used without the var keyword are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with var.
+
+  -Using var, declare a global variable myGlobal outside of any function. Initialize it with a value of 10.
+
+  -Inside function fun1, assign 5 to oopsGlobal without using the var keyword.
+```JavaScript
+// Declare your variable here
+var myGlobal = 10;
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+oopsGlobal = 5; 
+}
+// Only change code above this line
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+```
+
+49.Local Scope and Functions
+
+Note: Variables which are declared within a function, as well as the function parameters have local scope. That means, they are only visible within that function.
+
+  Example:
+  Here is a function myTest with a local variable called loc. loc is not defined outside of the function.
+  function myTest() {
+  var loc = "foo";
+  console.log(loc);
+   }
+  myTest(); // logs "foo"
+  console.log(loc); // loc is not defined
+
+  -Declare a local variable myVar inside myLocalScope. Run the tests and then follow the instructions commented out in the editor.
+```JavaScript
+function myLocalScope() {
+  'use strict'; // you shouldn't need to edit this line
+  console.log(myVar);
+}
+myLocalScope();
+var myVar;
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+// WE REMOVED THIS console.log(myVar);
+// Now remove the console log line to pass the test
+```
+
+50.Global vs. Local Scope in Functions
+
+Note: It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
+   Example:The function myFun will return "Head" because the local version of the variable is present.
+   var someVar = "Hat";
+   function myFun() {
+   var someVar = "Head";
+   return someVar;
+   }
+
+  -Add a local variable to myOutfit function to override the value of outerWear with "sweater".
+```JavaScript
+// Setup
+var outerWear = "T-Shirt";
+function myOutfit() {
+  // Only change code below this line
+var outerWear = "sweater";
+  // Only change code above this line
+  return outerWear;
+}
+myOutfit();
+```
+
+51.Return a Value from a Function with Return
+
+Note: We can pass values into a function with arguments. You can use a return statement to send a value back out of a function.
+  Example:
+  function plusThree(num) {
+  return num + 3;
+  }
+  var answer = plusThree(5); // 8 plusThree takes an argument for num and returns a value equal to num + 3.
+
+  -Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value. See the last line in the editor for an example of how you can test your timesFive function.
+```JavaScript
+// Example
+function minusSeven(num) {
+  return num - 7;
+}
+// Only change code below this line
+function timesFive(num) {
+  return num * 5;
+}
+console.log(timesFive(10));
+```
+
+52.Understanding Undefined Value returned from a Function
+
+Note: A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.
+    Example
+    var sum = 0;
+    function addSum(num) {
+      sum = sum + num;
+    }
+    var returnedValue = addSum(3); // sum will be modified but returned value is undefined. addSum is a function without a return statement. The function will change the global sum variable but the returned value of the function is undefined.
+  
+  -Create a function addFive without any arguments. This function adds 5 to the sum variable, but its returned value is undefined
+```JavaScript
+// Example
+var sum = 0;
+function addThree() {
+  sum = sum + 3;
+}
+// Only change code below this line
+function addFive(){
+  sum+=5;
+}
+// Only change code above this line
+var returnedValue = addFive();
+```
+
+53.Stand in Line
+Note: In Computer Science a queue is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue.
+
+Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
+
+Add the number to the end of the array, then remove the first element of the array.
+
+The nextInLine function should then return the element that was removed.
+```JavaScript
+// Example
+var changed = 0;
+
+function change(num) {
+  return (num + 5) / 3;
+}
+
+changed = change(10);
+
+// Setup
+var processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+processed= processArg(7);
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
+```JavaScript
+
+```
+
 ```JavaScript
 
 ```
