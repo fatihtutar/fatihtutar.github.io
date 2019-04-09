@@ -75,19 +75,240 @@ properCamelCase = "A String";
 titleCaseOver = 9000;
 ```
 
+7.Add Two Numbers with JavaScript
+
+  -Change the 0 so that sum will equal 20.
+```JavaScript
+var sum = 10 + 10;
+
+```
+
+8.Subtract One Number from Another with JavaScript
+
+  -Subtract One Number from Another with JavaScript
+```JavaScript
+var difference = 45 - 33;
+```
+
+9.Multiply Two Numbers with JavaScript
+
+  -Change the 0 so that product will equal 80
+```JavaScript
+var product = 8 * 10;
+```
+
+10.Divide One Number by Another with JavaScript
+
+  -Change the 0 so that the quotient is equal to 2
+```JavaScript
+var quotient = 66 / 33;
+```
+
+11.Increment a Number with JavaScript
+
+  -Change the code to use the ++ operator on myVar.
+```JavaScript
+var myVar = 87;
+// Only change code below this line
+myVar++;
+```
+
+12.Decrement a Number with JavaScript
+
+  -Change the code to use the -- operator on myVar
+```JavaScript
+var myVar = 11;
+// Only change code below this line
+myVar--;
+```
+
+13.Create Decimal Numbers with JavaScript
+
+Note:Not all real numbers can accurately be represented in floating point. This can lead to rounding errors.
+
+  -Create a variable myDecimal and give it a decimal value with a fractional part
+```JavaScript
+var ourDecimal = 5.7;
+// Only change code below this line
+var myDecimal = 3.14;
+```
+
+14.Multiply Two Decimals with JavaScript
+
+  -Change the 0.0 so that product will equal 5.0
+```JavaScript
+var product = 2.0 * 2.5;
+```
+
+15.Divide One Decimal by Another with JavaScript
+
+  -Change the 0.0 so that quotient will equal to 2.2
+```JavaScript
+var quotient = 4.4 / 2.0; // Fix this line
+```
+
+16.Finding a Remainder in JavaScript
+
+Note: The remainder operator % gives the remainder of the division of two numbers.The remainder operator is sometimes incorrectly referred to as the "modulus" operator. It is very similar to modulus, but does not work properly with negative numbers.Usage In mathematics, a number can be checked to be even or odd by checking the remainder of the division of the number by 2.
+    17 % 2 = 1 (17 is Odd)
+    48 % 2 = 0 (48 is Even)
+    Example
+    5 % 2 = 1 because
+    Math.floor(5 / 2) = 2 (Quotient)
+    2 * 2 = 4
+    5 - 4 = 1 (Remainder)
+
+  -Set remainder equal to the remainder of 11 divided by 3 using the remainder (%) operator.
+```JavaScript
+// Only change code below this line
+var remainder = 11 % 3;
+```
+
+17.Compound Assignment With Augmented Addition
+
+Note:One such operator is the += operator.
+    Example
+    var myVar = 1;
+    myVar += 5;
+    console.log(myVar); // Returns 6
+    
+  -Convert the assignments for a, b, and c to use the += operator.
+```JavaScript
+var a = 3;
+var b = 17;
+var c = 12;
+// Only modify code below this line
+a += 12;
+b += 9;
+c += 7;
+```
+
+18.Compound Assignment With Augmented Subtraction
+
+-Convert the assignments for a, b, and c to use the -= operator.
+```JavaScript
+var a = 11;
+var b = 9;
+var c = 3;
+// Only modify code below this line
+a -= 6;
+b -= 15;
+c -= 1;
+```
+
+19.Compound Assignment With Augmented Multiplication
+
+-Convert the assignments for a, b, and c to use the *= operator.
+```JavaScript
+var a = 5;
+var b = 12;
+var c = 4.6;
+// Only modify code below this line
+a *= 5;
+b *= 3;
+c *= 10;
+```
+
+20.Compound Assignment With Augmented Division
+
+  -Convert the assignments for a, b, and c to use the /= operator.
+```JavaScript
+var a = 48;
+var b = 108;
+var c = 33;
+// Only modify code below this line
+a /= 12;
+b /= 4;
+c /= 11;
+```
+
+21.Declare String Variables
+
+  -Create two new string variables: myFirstName and myLastName and assign them the values of your first and last name, respectively.
+```JavaScript
+// Example
+var firstName = "Alan";
+var lastName = "Turing";
+// Only change code below this line
+var myFirstName = "Fatih";
+var myLastName = "Tutar";
+```
+
+22.Escaping Literal Quotes in Strings
+
+Note:In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.Example:
+          var sampleStr = "Alan said, \"Peter is learning JavaScript\".";
+          Alan said, "Peter is learning JavaScript".
+
+  -Use backslashes to assign a string to the myStr variable so that if you were to print it to the console, you would see:
+   I am a "double quoted" string inside "double quotes".
+```JavaScript
+var myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
+```
+
+23.Quoting Strings with Single Quotes
+
+Note:The backslash \ should not be be confused with the forward slash /. They do not do the same thing.
+     Another use for it would be saving an <a> tag with various attributes in quotes, all within a string.
+     String values in JavaScript may be written with single or double quotes, as long as you start and end with the same type of quote.Example:
+     goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"';
+badStr = 'Finn responds, "Let's go!"'; // Throws an error
+
+  -Change the provided string to a string with single quotes at the beginning and end and no escape characters.Right now, the <a> tag in the string uses double quotes everywhere. You will need to change the outer quotes to single quotes so you can remove the escape characters. 
+  var myStr = "<a href=\"http://www.example.com\" target=\"_blank\">Link</a>";
+  
+```JavaScript
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+```
+
+24.Escape Sequences in Strings
+
+Note:Code	Output
+      \'	single quote
+      \"	double quote
+      \\	backslash
+      \n	newline
+      \r	carriage return
+      \t	tab
+      \b	backspace
+      \f	form feed
+      Note that the backslash itself must be escaped in order to display as a backslash.
+
+  -Assign the following three lines of text into the single variable myStr using escape sequences.
+    FirstLine
+        \SecondLine
+    ThirdLine
+```JavaScript
+var myStr = 'FirstLine\n\t\\SecondLine\nThirdLine' ; // Change this line
+```
+
+25.Concatenating Strings with Plus Operator
+
+  -Build myStr from the strings "This is the start. " and "This is the end." using the + operator.
+```JavaScript
+// Example
+var ourStr = "I come first. " + "I come second.";
+// Only change code below this line
+var myStr = "This is the start. " + "This is the end." ;
+```
+
+26.Concatenating Strings with the Plus Equals Operator
+
+Note:We can also use the += operator to concatenate a string onto the end of an existing string variable. This can be very helpful to break a long string over several lines.
+  
+  -
+```JavaScript
+
+```
 
 ```JavaScript
 
 ```
 
-
 ```JavaScript
 
 ```
 
-```JavaScript
-
-```
 ```JavaScript
 
 ```
