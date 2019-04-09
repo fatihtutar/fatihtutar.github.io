@@ -819,43 +819,129 @@ Add the number to the end of the array, then remove the first element of the arr
 
 The nextInLine function should then return the element that was removed.
 ```JavaScript
-// Example
-var changed = 0;
-
-function change(num) {
-  return (num + 5) / 3;
+function nextInLine(arr, item) {
+  // Your code here
+  arr.push(item);
+  var removed = arr.shift();
+  return removed;  // Change this line
 }
 
-changed = change(10);
+// Test Setup
+var testArr = [1,2,3,4,5];
+
+// Display Code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6)); // Modify this line to test
+console.log("After: " + JSON.stringify(testArr));
+
+```
+
+54.Understanding Boolean Values
+
+Note: Another data type is the Boolean. Booleans may only be one of two values: true or false. They are basically little on-off switches, where true is "on" and false is "off." These two states are mutually exclusive. Boolean values are never written with quotes. The strings "true" and "false" are not Boolean and have no special meaning in JavaScript.
+
+  -Modify the welcomeToBooleans function so that it returns true instead of false when the run button is clicked.
+```function welcomeToBooleans() {
+
+// Only change code below this line.
+
+return true; // Change this line
+
+// Only change code above this line.
+}
+```
+
+55.Use Conditional Logic with If Statements
+  Note:Example
+  function test (myCondition) {
+  if (myCondition) {
+     return "It was true";
+  }
+  return "It was false";
+}
+test(true); // returns "It was true"
+test(false); // returns "It was false"
+
+  -Create an if statement inside the function to return "Yes, that was true" if the parameter wasThatTrue is true and return "No, that was false" otherwise
+```JavaScript
+/ Example
+function ourTrueOrFalse(isItTrue) {
+  if (isItTrue) { 
+    return "Yes, it's true";
+  }
+  return "No, it's false";
+}
 
 // Setup
-var processed = 0;
+function trueOrFalse(wasThatTrue) {
 
-function processArg(num) {
-  return (num + 3) / 5;
+  // Only change code below this line.
+    if(wasThatTrue) {
+        return "Yes, that was true"
+    }
+  return "No, that was false"
+  
+  // Only change code above this line.
+
 }
 
-// Only change code below this line
-processed= processArg(7);
-
+// Change this value to test
+trueOrFalse(true);
 ```
 
+56.Comparison with the Equality Operator
+
+Example:
+function equalityTest(myVal) {
+  if (myVal == 10) {
+     return "Equal";
+  }
+  return "Not Equal";
+}
+Note: In order for JavaScript to compare two different data types (for example, numbers and strings), it must convert one type to another. This is known as "Type Coercion". Once it does, however, it can compare terms as follows:
+    1 == 1 // true
+    1 == 2 // false
+    1 == '1' // true
+    "3" == 3 // true
+ 
+
+  -Add the equality operator to the indicated line so that the function will return "Equal" when val is equivalent to 12
 ```JavaScript
+// Setup
+function testEqual(val) {
+  if (val==12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
 
+// Change this value to test
+testEqual(12);
 ```
 
+57.Comparison with the Strict Equality Operator
+
+Note: Strict equality (===) is the counterpart to the equality operator (==). However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
+Examples
+
+    3 === 3 // true
+    3 === '3' // false
+
+  -Use the strict equality operator in the if statement so the function will return "Equal" when val is strictly equal to 7
 ```JavaScript
+// Setup
+function testStrict(val) {
+  if (val===7) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
 
+// Change this value to test
+testStrict(7);
 ```
 
-```JavaScript
-
-```
-
-```JavaScript
-
-```
-
+58.
 ```JavaScript
 
 ```
