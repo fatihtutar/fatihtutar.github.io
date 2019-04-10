@@ -97,6 +97,7 @@ classification:
 
 the fix:
 ```js
+var name= 5;
 ```
 your notes:
 
