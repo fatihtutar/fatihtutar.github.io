@@ -90,6 +90,7 @@ var = 5;
 ```
 error message:
 ```js
+SyntaxError: Unexpected token 
 ```
 classification:
 * creation phase or execution phase ?
@@ -112,7 +113,8 @@ let a = {b:3};
 let b = a.b.3
 ```
 error message:
-```
+```js
+SyntaxError: Unexpected number
 ```
 classification:
 * creation phase or execution phase ?
@@ -120,6 +122,8 @@ classification:
 
 the fix:
 ```js
+let a = {b:3};
+let b = a.b;
 ```
 your notes:
 
@@ -154,7 +158,8 @@ let a = 'this is
 two lines';
 ```
 error message:
-```
+```js
+SyntaxError: Unexpected token ILLEGAL
 ```
 classification:
 * creation phase or execution phase ?
@@ -162,6 +167,7 @@ classification:
 
 the fix:
 ```js
+let a = 'this is two lines';
 ```
 your notes:
 
