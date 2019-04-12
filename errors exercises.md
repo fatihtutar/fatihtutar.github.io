@@ -137,7 +137,8 @@ let x = {b:'e'};
 let y = b.e;
 ```
 error message:
-```
+```js
+pythontutor gives no mistake
 ```
 classification:
 * creation phase or execution phase ?
@@ -180,7 +181,8 @@ broken code:
 let a = 1:
 ```
 error message:
-```
+```js
+SyntaxError: Unexpected token 
 ```
 classification:
 * creation phase or execution phase ?
@@ -188,6 +190,7 @@ classification:
 
 the fix:
 ```js
+let a = 1;
 ```
 your notes:
 
@@ -200,7 +203,8 @@ broken code:
 let myArray = [1, 2, 3;
 ```
 error message:
-```
+```js
+SyntaxError: Unexpected token 
 ```
 classification:
 * creation phase or execution phase ?
@@ -208,6 +212,7 @@ classification:
 
 the fix:
 ```js
+let myArray = [1, 2, 3];
 ```
 your notes:
 
@@ -225,7 +230,8 @@ function getNine {
 let result = getNine();
 ```
 error message:
-```
+```js
+SyntaxError: Unexpected token
 ```
 classification:
 * creation phase or execution phase ?
@@ -233,6 +239,12 @@ classification:
 
 the fix:
 ```js
+function getNine() {
+2	  let x = 6;
+3	  let y = 3;
+4	  return x + y;
+5	}
+6	let result = getNine();
 ```
 your notes:
 
@@ -245,7 +257,8 @@ broken code:
 let innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
 ```
 error message:
-```
+```js
+SyntaxError: Unexpected token ILLEGAL
 ```
 classification:
 * creation phase or execution phase ?
@@ -253,6 +266,7 @@ classification:
 
 the fix:
 ```js
+let innerHtml = "<p>Click here to <a href=#Home>return home</a></p>";
 ```
 your notes:
 
@@ -265,7 +279,8 @@ broken code:
 let nested_messages = 'remind yourself ''i can do this!'' at least once a day';
 ```
 error message:
-```
+```js
+SyntaxError: Unexpected string
 ```
 classification:
 * creation phase or execution phase ?
@@ -273,6 +288,7 @@ classification:
 
 the fix:
 ```js
+let nested_messages = 'remind yourself "i can do this!" at least once a day';
 ```
 your notes:
 
@@ -286,7 +302,8 @@ const a = 9;
 a = 0;
 ```
 error message:
-```
+```js
+TypeError: Assignment to constant variable
 ```
 classification:
 * creation phase or execution phase ?
@@ -296,7 +313,7 @@ the fix:
 ```js
 ```
 your notes:
-
+const value cannot b reassigned
 [TOP](#errors)
 
 ---
