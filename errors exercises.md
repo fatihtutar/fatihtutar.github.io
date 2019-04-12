@@ -170,7 +170,7 @@ classification:
 
 the fix:
 ```js
-let a = 'this is two lines';
+let a = 'this is\n two lines';
 ```
 your notes:
 
