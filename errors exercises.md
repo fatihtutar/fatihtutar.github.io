@@ -146,6 +146,8 @@ classification:
 
 the fix:
 ```js
+let x = {b:'e'};
+let y = x;
 ```
 your notes:
 
@@ -311,6 +313,8 @@ classification:
 
 the fix:
 ```js
+let a = 9;
+a = 0;
 ```
 your notes:
 const value cannot b reassigned
@@ -325,6 +329,7 @@ a = 0;
 ```
 error message:
 ```
+SyntaxError: Missing initializer in const declaration
 ```
 classification:
 * creation phase or execution phase ?
@@ -332,6 +337,7 @@ classification:
 
 the fix:
 ```js
+const a = 0;
 ```
 your notes:
 
@@ -346,6 +352,7 @@ array.length()
 ```
 error message:
 ```
+TypeError: array.length is not a function
 ```
 classification:
 * creation phase or execution phase ?
@@ -353,6 +360,8 @@ classification:
 
 the fix:
 ```js
+let array = [];
+array.length;
 ```
 your notes:
 
